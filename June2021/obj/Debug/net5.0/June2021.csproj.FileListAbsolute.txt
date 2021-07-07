@@ -17,3 +17,5 @@ E:\Industry Connect\Automation Testing\Visual Studio\June 2021\June2021\June2021
 E:\Industry Connect\Automation Testing\Visual Studio\June 2021\June2021\June2021\bin\Debug\net5.0\Newtonsoft.Json.dll
 E:\Industry Connect\Automation Testing\Visual Studio\June 2021\June2021\June2021\bin\Debug\net5.0\WebDriver.dll
 E:\Industry Connect\Automation Testing\Visual Studio\June 2021\June2021\June2021\obj\Debug\net5.0\June2021.csproj.CopyComplete
+E:\Industry Connect\Automation Testing\Visual Studio\June 2021\June2021\June2021\bin\Debug\net5.0\SeleniumExtras.WaitHelpers.dll
+E:\Industry Connect\Automation Testing\Visual Studio\June 2021\June2021\June2021\bin\Debug\net5.0\WebDriver.Support.dll

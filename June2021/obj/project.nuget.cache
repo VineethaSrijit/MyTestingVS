@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "BVadlOZ5cYuIlbAk89VL5Nj/s6RgKKWuyP01aH85s36jyDJMdc8M63e8wWfovIAUmJolqzxTj9qrDYicZmRBUw==",
+  "dgSpecHash": "E6aPjfsYGbmQVP8rIvxpzsDRfuBKkqanjCfLLb3DZoTVXfi+EMFgQOq861eD+uD09Wh83VFM7L3tUfsDQwYzjA==",
   "success": true,
   "projectFilePath": "E:\\Industry Connect\\Automation Testing\\Visual Studio\\June 2021\\June2021\\June2021\\June2021.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\srime\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\srime\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\srime\\.nuget\\packages\\microsoft.netcore.app\\2.2.8\\microsoft.netcore.app.2.2.8.nupkg.sha512",
     "C:\\Users\\srime\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.2.8\\microsoft.netcore.dotnetapphost.2.2.8.nupkg.sha512",
