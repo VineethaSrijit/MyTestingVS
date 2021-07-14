@@ -14,6 +14,7 @@ namespace June2021.Pages
         //functions to navigate to the Time and Materials page
         public void GoToTMPage(IWebDriver driver)
         {
+            
             Wait.WaitForWebElementToExist(driver, "/html/body/div[3]/div/div/ul/li[5]/a", "XPath", 5);
             IWebElement administrationDropDown = driver.FindElement(By.XPath("/html/body/div[3]/div/div/ul/li[5]/a"));
             administrationDropDown.Click();

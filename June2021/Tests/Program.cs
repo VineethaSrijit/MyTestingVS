@@ -1,32 +1,55 @@
 ﻿using June2021.Pages;
-using OpenQA.Selenium;
+using June2021.Utilities;
+using NUnit.Framework;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.Support.UI;
+using OpenQA.Selenium;
 using System;
-using System.Threading;
-
 namespace June2021
 {
-    class Program
+    [TestFixture]
+    class Program : CommonDriver
     {
-        static void Main(string[] args)
-        {
-            IWebDriver driver = new ChromeDriver(@"E:\Industry Connect\Automation Testing\Visual Studio\June 2021\June2021\");
+            [SetUp]
+            public void LoginSteps()
+            {
+                driver = new ChromeDriver(@"E:\Industry Connect\Automation Testing\Visual Studio\June 2021\June2021\");
+                //page object for login page
+                LoginPage loginObj = new LoginPage();
+                loginObj.LoginActions(driver);
 
-            //page object for login page
-            LoginPage loginObj = new LoginPage();
-            loginObj.LoginActions(driver);
+                //page object for home page
+                HomePage homeObj = new HomePage();
+                homeObj.GoToTMPage(driver);
+            }
 
-            //page object for home page
-            HomePage homeObj = new HomePage();
-            homeObj.GoToTMPage(driver);
+            [Test]
+            public void CreateTMTest()
+            {
+                TMPage tmObj = new TMPage();
+                tmObj.CreateTM(driver);
+            }
 
-            //page object for TM page
-            TMPage tmObj = new TMPage();
-            tmObj.CreateTM(driver);
-            tmObj.EditTM(driver);
-            tmObj.DeleteTM(driver);
+            [Test]
+            public void EditTMTest()
+            {
+                TMPage tmObj = new TMPage();
+                tmObj.EditTM(driver);
+            }
 
-        }
+            [Test]
+            public void DeleteTMTest()
+            {
+                TMPage tmObj = new TMPage();
+                tmObj.DeleteTM(driver);
+            }
+
+            [TearDown]
+            public void CloseTestRun()
+            {
+            driver.Quit();
+
+
+
+            }
     }
 }
