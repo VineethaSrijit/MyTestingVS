@@ -14,7 +14,6 @@ namespace June2021.Pages
         public void LoginActions(IWebDriver driver)
         {
             
-            //TEST CASE 1 - check if user able to login successfully with uname,password : hari,123123
             // open chrome browser
             driver.Manage().Window.Maximize();
 
